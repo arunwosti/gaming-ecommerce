@@ -1,0 +1,226 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+section{
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    background-color: #0b48ed;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+#about-content {
+    
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 166, 255, 0.1);
+    border: 2px solid rgb(0, 166, 255);
+}
+
+#developer-team{
+    padding: 0px!important;
+}
+#developer-team h2 {
+    color: white;
+    margin-bottom: 0px;
+    padding:20px 30px;
+    background-color: #0b48ed!important;
+    text-align: left;
+    margin-top: 0px;
+}
+.team-row{
+    background-color: black;
+    padding: 50px 0px;
+}
+.team-member {
+    margin-top: 20px;
+    border: 2px solid rgb(0, 166, 255);
+    height: 250px;
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    text-align: center;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons i {
+    font-size: 20px;
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.social-icons i:hover {
+    color: #007bff;
+}
+
+/*------------------ Newsletter Section ------------------*/
+
+#container{
+    background-image: url(/assets/images/newsletter-bg.jpg);
+    background-size: cover;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    /* position: absolute; */
+   min-width: 100vw;
+   min-height: 35vh;
+   padding-top: 50px;
+
+}
+#container p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+#email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+#email-box i{
+    background-color: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+#text-box,
+.subscribeBtn{
+    outline: none;
+    border: none;
+}
+#text-box{
+    width:0px;
+    transition: 0.6s;
+}
+#email-box:hover > #text-box,#text-box:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+#subscribeBtn{
+    background-color: #0b48ed;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* ------------------Footer Section -------------------------*/
+#footer{
+    height: 50vh;
+    width: 100vw;
+    background-color: #2f3542;
+    color: white;
+    
+    
+}
+
+#footer-content{
+    /* height: 470px; */
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 30px 5%;
+} 
+
+#footer-content ul{
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 15px;
+
+    
+}
+#footer-content h2{
+    color:rgb(254, 254, 254) ;
+    text-align: center;
+}
+#footer-content li{
+    font-size: 19px;
+    color: rgb(194, 192, 192);
+    margin-bottom: 5px;
+}
+#footer-content li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+#below-footer{
+    height: 15vh;
+    width: 100vw;
+    /* padding-bottom: 100px; */
+    background-color: black;
+    color: rgb(227, 222, 222);
+    cursor: pointer;
+    /* padding-top: 15px; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#below-footer .media-section{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+#media-section i:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+#logo-sec img{
+    height: 50px;
+    width: 50px;
+}
+
+#copyright-section{
+    
+    width: 30vw;
+    font-size: 16px;
+}

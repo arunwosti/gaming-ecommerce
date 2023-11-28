@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #form_container {
+      background-color: rgb(214, 214, 214);
+      padding:20px  40px;
+      text-align: centre;
+      border-radius: 15px;
+      width: 50vw;
+      border: 2px solid #4090db;
+    }
+   
+
+    .form-group {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    #form-header {
+      text-align: center;
+      color: #333; 
+      font-family: 'Arial', sans-serif; 
+    }
+    .form-group label {
+      width: 190px;
+      margin-right: 10px;
+      text-align: right;
+    }
+    
+    .form-group input {
+      width: 200px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    .error-message {
+      position: absolute;
+      right: -10px;
+      top: 8px;
+      color: red;
+    }
+    .btnArea{
+  
+      /* margin-left: 180px; */
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      
+      }
+      .btnArea a{
+        text-decoration: none;
+        color: white;
+      }
+    button {
+      background-color: #0b48ed;
+      color: white;
+      padding: 10px 20px;
+      border: 2px solid #4090db;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    button:hover{
+      color: #fff;
+      background-color: #4090db;
+    }
+    
+    button.reset {
+      background-color: #4090db;
+      color: white;
+      margin-left: 20px;
+    }
+    .reset:hover{
+      background-color: #0b48ed!important;
+      color: white;
+    }
+  
+    

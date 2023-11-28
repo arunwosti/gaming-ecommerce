@@ -1,0 +1,479 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    
+    
+}
+html,
+body{
+    height: 100%;
+    width: 100%;
+}
+
+/* ------------------------------NAV---------------------------- */
+nav{
+    height: 10vh;
+    width: 100vw;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px ;
+    background-color: #083FDC;
+    color: white;
+}
+nav a:hover{
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+}
+nav>img{
+    width: 9%;
+    margin-top: -1.7vh;
+}
+#right-nav>button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid white;
+    background-color: #0b48ed;
+    color: white;
+    font-size: 16px;
+}
+#right-nav>button:hover{
+    background-color: #3562dc;
+    
+}
+#right-nav>button>a{
+    color: white;
+    text-decoration: none;
+}
+.nav-header{
+    color: white;
+    font-size: 16px;
+    font-family: 'Young Serif', serif;
+    cursor: pointer!important;
+}
+.nav-header a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.dropdown-menu{
+    position: absolute!important;
+    top: 0;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#part1{
+    height: 90vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    
+}
+#part1>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.7;
+}
+
+
+#banner-title{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    width: 50vw;
+    height: 40vh;
+}
+#banner-title>h1{
+    font-family: 'Young Serif', serif;
+    color: white;
+    font-size: 54px;
+    line-height: 1;
+}
+#banner-desc{
+    height: 40%;
+    width: 100%;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: bolder;
+    /* padding: 0px 30px; */
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    color: white;
+}
+#banner-desc>button{
+    padding: 10px 20px;
+    margin-top: 30px;
+    border: none;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #0b48ed;
+    font-weight: bold;
+    width: 200px;
+    cursor: pointer;
+}
+
+/* --------Page 2 ---------- */
+
+#part2{
+    height: 110vh;
+    width: 100vw;
+    background-color: #0b48ed;
+    position: relative;
+}
+#part2>h1{
+    color: whitesmoke;
+    padding:10px 20px;
+}
+#part2>video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#part2>.explore-game{
+    position: absolute;
+    top: 120px;
+}
+.explore-container{
+    height: 600px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.explore-container img{
+    height: 250px;
+    width: 270px;
+}
+.product-area{
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.txt-area h2{
+    color: white;
+    text-decoration: underline;
+    font-family: 'Young Serif', serif;
+    margin: 10px auto;
+    font-size: 20px;
+}
+.txt-area p{
+    color: white;
+}
+.txt-area h3{
+    margin-top: 10px;
+    font-size: 18px;
+    color: rgb(17, 133, 235);
+    
+}
+.txt-area h3:hover{
+    color: rgb(66, 157, 237);
+}
+
+
+
+
+/*--------- part 3------- */
+
+#part3{
+    height: 62vh;
+    width: 100vw;
+    background-image: url("https://storage-asset.msi.com/event/2023/CND/exoprimal/images/kv-img-xl.webp");
+    background-size: cover;
+    opacity: 0.99;
+}
+#brand-ad>img{
+    height: 20%;
+    width: 30%;
+    margin-left: 10vw;
+    transition: 0.3 ease-in-out;
+}
+
+#brand-txt>img{
+    max-width: 40vw;
+    max-height: 20vh;
+    position: relative;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+#brand-ad>img:hover{
+    cursor: pointer;
+}
+
+#part3:hover #brand-ad>img{
+    /* height: 40%;
+    width: 35%; */
+    transform: rotate(5deg) scale(1.2);
+}
+
+/* ---------------------part 4 ------------------------ */
+
+#part4{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: #0b48ed; */
+    background-image: url(/assets/images/Hotsales-bg.jpg);
+    /* padding-top: 20px; */
+}
+#part4>h1{
+    color: white;
+    margin-bottom: 30px;
+    padding:20px 20px;
+    background-color: #0b48ed;
+}
+.swiper {
+    max-width: 90%;
+    max-height: 150%;
+    
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(0, 166, 255);
+    max-height: 500px;
+    padding-bottom: 20px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 330px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .swiper-slide h2{
+    background-color: transparent;
+    padding: 10px 10px;
+    width: 330px;
+    color: white;
+    font-size: 22px;
+  }
+  .swiper-slide i{
+    color: rgb(248, 215, 5);
+  }
+  .rating{
+    padding: 10px 0px;
+  }
+  .offer-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 30px;
+    background-color: transparent;
+    color: white;
+  }
+
+.swiper-button-next,
+.swiper-button-prev{
+    background-color: rgb(255, 254, 254);
+    border-radius: 55%;
+    color: grey!important;
+    height: 50px!important;
+    width: 50px!important;
+    opacity: 0.6;
+    
+}
+.swiper-button-next:hover{
+    color: black;
+    opacity:1;
+    font-weight: bold;
+}
+.swiper-button-prev:hover{
+    color: black;
+    opacity:1;
+    font-weight: bold;
+}
+
+/* ------------------Brands Section ---------------- */
+.brands{
+    background-color: black;
+    padding: 30px 5% 50px 5%;
+}
+.brand-section h1{
+    color: white;
+    background-color: #0b48ed;
+    margin-bottom: 0px;
+    padding: 20px 30px;
+}
+.brands img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/*------------------ Newsletter Section ------------------*/
+
+.container{
+    background-image: url(/assets/images/newsletter-bg.jpg);
+    background-size: cover;
+    padding: 10px 10px;
+    text-align: center;
+    color: white;
+    position: absolute;
+   min-width: 100vw;
+   min-height: 35vh;
+   padding-top: 50px;
+
+}
+.container p{
+    max-width: 600px;
+    margin: 40px auto;
+    font-size: 15px;
+    font-weight: 300;
+}
+.email-box{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i{
+    background-color: #2f3542;
+    width: 40px;
+    line-height: 40px;
+}
+.text-box,
+.subscribeBtn{
+    outline: none;
+    border: none;
+}
+.text-box{
+    width:0px;
+    transition: 0.6s;
+}
+.email-box:hover > .text-box,.text-box:focus{
+    width: 260px;
+    padding: 0 10px;
+}
+.subscribeBtn{
+    background-color: #0b48ed;
+    color: white;
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* ------------------Footer Section -------------------------*/
+.footer{
+    height: 100vh;
+    width: 100vw;
+    background-color: #2f3542;
+    color: white;
+    
+    
+}
+
+.footer-content{
+    height: 470px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 20% 5% 0% 5%;
+} 
+
+.footer-content ul{
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 15px;
+
+    
+}
+.footer-content h2{
+    color:rgb(254, 254, 254) ;
+    text-align: center;
+}
+.footer-content li{
+    font-size: 19px;
+    color: rgb(194, 192, 192);
+    margin-bottom: 5px;
+}
+.footer-content li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.below-footer{
+    height: 15vh;
+    width: 100vw;
+    /* padding-bottom: 100px; */
+    background-color: black;
+    color: rgb(227, 222, 222);
+    cursor: pointer;
+    /* padding-top: 15px; */
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.below-footer .media-section{
+    display: flex;
+    justify-content: space-around;
+    width: 30vw;
+}
+.media-section i:hover{
+    color: red;
+    transform: scale(1.2);
+}
+
+.logo-sec img{
+    height: 50px;
+    width: 50px;
+}
+
+.copyright-section{
+    
+    width: 30vw;
+    font-size: 16px;
+}
+
+
+/* breadcrumbs */
+.breadcrumb{
+    margin: 40px 20px;
+}
+.breadcrumb-container{
+    display: flex;
+
+}
+.breadcrumb-container .home{
+    background-color: #dbdcdd;
+    color: black;
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.breadcrumb-container i{
+    font-size: 30px;
+    color: white;
+}
+.breadcrumb-container .current-page{
+    padding: 5px 20px;
+    color: white;
+}
+.breadcrumb a{
+    color: black;
+}
+.home:hover{
+    background-color: rgb(0, 166, 255);
+    cursor: pointer;
+}

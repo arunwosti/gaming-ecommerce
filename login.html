@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" type="text/css" href="/css/signup.css">
+  
+</head>
+<body>
+  <div id="form_container">
+    <h1 id="form-header">Login</h1>
+    <form id="regForm">
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error-message">*</div>
+        
+      </div>
+     <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="email" name="password" required>
+        <div id="emailError" class="error-message">*</div>
+     </div>
+
+      <div class="btnArea">
+      <button type="button" >
+        <a href="/signup.html">
+            Signup
+        </a>
+      </button>
+      <button type="button" class="reset">
+        <a href="/index.html">
+            Login
+        </a>
+      </button>
+    </div>
+    </form>
+  </div>
+
+  <script src="/javascript/signup.js"></script>
+</body>
+</html>
