@@ -420,15 +420,15 @@ nav>img{
 }
 
 .below-footer{
-    height: 120px;
+    height: 150px;
     width: 100vw;
     background-color: black;
     color: rgb(227, 222, 222);
     cursor: pointer;
-    /* padding-top: 15px; */
+    padding-top: 15px;
     font-size: 30px;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: space-around;
     z-index: 1001;
 }
