@@ -633,3 +633,8 @@ button:hover {
         flex-basis: 100%;
     }
 }
+@media screen and (min-width:1280px) and (max-width:1650px){
+    #footer-content{
+        padding: 15% 5% 0% 5%;
+    }
+}

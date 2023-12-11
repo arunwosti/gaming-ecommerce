@@ -15,6 +15,11 @@ body{
 }
 
 /* ------------------------------NAV---------------------------- */
+.responsive-nav{
+    z-index: 1002;
+    display: none;
+    
+}
 nav{
     height: 10vh;
     width: 100vw;
@@ -130,7 +135,7 @@ nav>img{
 /* --------Page 2 ---------- */
 
 #part2{
-    height: 110vh;
+    height: 700px;
     width: 100vw;
     background-color: #0b48ed;
     position: relative;
@@ -190,7 +195,7 @@ nav>img{
 /*--------- part 3------- */
 
 #part3{
-    height: 62vh;
+    height: 470px;
     width: 100vw;
     background-image: url("https://storage-asset.msi.com/event/2023/CND/exoprimal/images/kv-img-xl.webp");
     background-size: cover;
@@ -223,7 +228,7 @@ nav>img{
 /* ---------------------part 4 ------------------------ */
 
 #part4{
-    height: 100vh;
+    height: 680px;
     width: 100vw;
     /* background-color: #0b48ed; */
     background-image: url(/assets/images/Hotsales-bg.jpg);
@@ -317,6 +322,9 @@ nav>img{
     transform: scale(1.1);
     cursor: pointer;
 }
+.brands img{
+    margin-right: 0%;
+}
 
 
 /*------------------ Newsletter Section ------------------*/
@@ -329,7 +337,7 @@ nav>img{
     color: white;
     position: absolute;
    min-width: 100vw;
-   min-height: 35vh;
+   min-height: 250px;
    padding-top: 50px;
 
 }
@@ -372,7 +380,7 @@ nav>img{
 
 /* ------------------Footer Section -------------------------*/
 .footer{
-    height: 100vh;
+    /* height: 600px; */
     width: 100vw;
     background-color: #2f3542;
     color: white;
@@ -381,13 +389,13 @@ nav>img{
 }
 
 .footer-content{
-    height: 470px;
+    height: 570px;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; 
-    padding: 20% 5% 0% 5%;
+    padding: 25% 5% 50px 5%;
 } 
 
 .footer-content ul{
@@ -412,9 +420,8 @@ nav>img{
 }
 
 .below-footer{
-    height: 15vh;
+    height: 120px;
     width: 100vw;
-    /* padding-bottom: 100px; */
     background-color: black;
     color: rgb(227, 222, 222);
     cursor: pointer;
@@ -423,6 +430,7 @@ nav>img{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 1001;
 }
 .below-footer .media-section{
     display: flex;
@@ -476,4 +484,143 @@ nav>img{
 .home:hover{
     background-color: rgb(0, 166, 255);
     cursor: pointer;
+}
+
+
+
+/* -------------------------Media Query-------------------- */
+@media  screen and (max-width:479px){
+    .responsive-nav{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+    .explore-container img{
+        width: 400px;
+    }
+    #part3{
+        height: 290px;
+    }
+    #brand-ad>img {
+        height: 100%;
+        width: 80%;
+    }
+    .swiper-slide img{
+        width: 100%;
+    }
+    .brands{
+        padding: 30px 8% 50px 10%;
+    }
+    .footer-content li{
+        font-size: 8px;
+    }
+    .footer-content h2{
+        font-size: 12px;
+    }
+    .footer-content{
+        height: 400px;
+        padding: 70% 5% 50px 5%;
+    }
+    .below-footer{
+        height: 100px;
+    }
+    .below-footer .media-section{
+        font-size: 16px;
+    }
+    .copyright-section{
+        font-size: 10px;
+    }
+
+}
+@media  screen and (min-width:480px) and (max-width:630px) {
+
+    .responsive-nav{
+        display: block;
+    }
+    nav{
+        display: none;
+    }
+  
+    #part3{
+        height: 190px;
+    }
+    .swiper-slide img{
+        width: 100%;
+        height: 300px;
+    }
+    .swiper-slide h2{
+        margin-left: 20%;
+    }
+    .footer-content li{
+        font-size: 12px;
+    }
+    .footer-content h2{
+        font-size: 16px;
+    }
+    .footer-content{
+        height: 480px;
+        padding: 45% 5% 50px 5%;
+    }
+    .below-footer{
+        height: 100px;
+    }
+    .below-footer .media-section{
+        font-size: 20px;
+    }
+    .copyright-section{
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (min-width:1299px ) and (max-width:1350px){
+    #part2>.explore-game{
+        left: 40px;
+    }
+    .brands img{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:1351px ) and (max-width:1436px){
+    #part2>.explore-game{
+        left: 5%;
+    }
+    .brands img{
+        margin-right: 1.2%;
+    }
+    .below-footer{
+        
+    }
+}
+@media screen and (min-width:1437px ) and (max-width:1500px){
+    #part2>.explore-game{
+        left: 7%;
+    }
+    .brands img{
+        margin-right: 1.5%;
+    }
+    .product-area{
+        margin-right: 5%;
+    }
+
+}
+@media screen and (min-width:1501px ) and (max-width:1600px){
+    
+    #part2>.explore-game{
+        left: 7%;
+    }
+    .product-area{
+        margin-right: 12%;
+    }
+    .brands img{
+        margin-right: 2%;
+    }
+    .swiper-slide img{
+        width: 100%;
+        height: 300px;
+    }
+    
+
 }
